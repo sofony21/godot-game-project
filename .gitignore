@@ -1,0 +1,16 @@
+# Godot generated files
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build output
+build/
+dist/
