@@ -1,0 +1,293 @@
+[gd_scene format=3 uid="uid://ii7kmrq1jkxb"]
+
+[ext_resource type="Script" uid="uid://spoepevj31mj" path="res://scripts/main.gd" id="1_o7g6l"]
+[ext_resource type="PackedScene" path="res://GroundSegment.tscn" id="2_vi5kq"]
+[ext_resource type="PackedScene" path="res://Coin.tscn" id="4_3ccbu"]
+[ext_resource type="PackedScene" path="res://CoinBlue.tscn" id="7_1w2xm"]
+[ext_resource type="PackedScene" path="res://CoinRed.tscn" id="10_v8qla"]
+[ext_resource type="PackedScene" path="res://Wallet_Walking.tscn" id="12_c2s76"]
+[ext_resource type="PackedScene" path="res://Wallet_Flying.tscn" id="15_pljue"]
+[ext_resource type="PackedScene" path="res://Safe.tscn" id="17_5tfui"]
+[ext_resource type="PackedScene" path="res://SafeGolden.tscn" id="20_g4yo4"]
+[ext_resource type="PackedScene" path="res://Platform.tscn" id="21_im7ls"]
+[ext_resource type="PackedScene" path="res://PitFire.tscn" id="23_via5u"]
+[ext_resource type="PackedScene" path="res://PortalStart.tscn" id="25_ek63v"]
+[ext_resource type="PackedScene" path="res://PortalFinish.tscn" id="28_uy3go"]
+[ext_resource type="PackedScene" path="res://Hero.tscn" id="29_yf3a2"]
+[ext_resource type="PackedScene" path="res://Wallet_Final.tscn" id="31_finalwallet"]
+
+[node name="Level" type="Node2D" unique_id=413856663 groups=["level"]]
+script = ExtResource("1_o7g6l")
+metadata/_edit_lock_ = true
+
+[node name="Ground" type="Node2D" parent="." unique_id=1016908726]
+metadata/_edit_lock_ = true
+
+[node name="Ground_00000_02560" parent="Ground" unique_id=1389963093 instance=ExtResource("2_vi5kq")]
+position = Vector2(1280, 565)
+width_pixels = 2560.0
+
+[node name="Ground_02816_06144" parent="Ground" unique_id=62716744 instance=ExtResource("2_vi5kq")]
+position = Vector2(4480, 565)
+width_pixels = 3328.0
+
+[node name="Ground_06400_10304" parent="Ground" unique_id=1678597945 instance=ExtResource("2_vi5kq")]
+position = Vector2(8352, 565)
+width_pixels = 3904.0
+
+[node name="GroundDecorations" type="Node2D" parent="." unique_id=1239198662]
+metadata/_edit_lock_ = true
+
+[node name="ContinuousSeabedMass" type="Polygon2D" parent="GroundDecorations" unique_id=1936073294]
+z_index = -2
+color = Color(0.15686275, 0.23137255, 0.28627452, 1)
+polygon = PackedVector2Array(-512, 555, 10880, 555, 10880, 875, -512, 875)
+
+[node name="Coins" type="Node2D" parent="." unique_id=707394568]
+
+[node name="Coin_01" parent="Coins" unique_id=1936440384 instance=ExtResource("4_3ccbu")]
+position = Vector2(1400, 112)
+
+[node name="Blue_05" parent="Coins" unique_id=14240325 instance=ExtResource("7_1w2xm")]
+position = Vector2(5316, 140)
+
+[node name="Coin_12" parent="Coins" unique_id=261721404 instance=ExtResource("4_3ccbu")]
+position = Vector2(1056, 507)
+
+[node name="Coin_14" parent="Coins" unique_id=1382900122 instance=ExtResource("4_3ccbu")]
+position = Vector2(1800, 507)
+
+[node name="Coin_24" parent="Coins" unique_id=789084019 instance=ExtResource("4_3ccbu")]
+position = Vector2(2368, 263)
+
+[node name="Red_26" parent="Coins" unique_id=1510136254 instance=ExtResource("10_v8qla")]
+position = Vector2(8204, 508)
+
+[node name="Coin_28" parent="Coins" unique_id=1962711523 instance=ExtResource("4_3ccbu")]
+position = Vector2(2912, 507)
+
+[node name="Coin_29" parent="Coins" unique_id=1526767446 instance=ExtResource("4_3ccbu")]
+position = Vector2(3732, 116)
+
+[node name="Coin_30" parent="Coins" unique_id=2011643331 instance=ExtResource("4_3ccbu")]
+position = Vector2(4604, 252)
+
+[node name="Coin_31" parent="Coins" unique_id=444949753 instance=ExtResource("4_3ccbu")]
+position = Vector2(4300, 532)
+
+[node name="Coin_32" parent="Coins" unique_id=942737533 instance=ExtResource("4_3ccbu")]
+position = Vector2(4964, 524)
+
+[node name="Coin_33" parent="Coins" unique_id=1873286096 instance=ExtResource("4_3ccbu")]
+position = Vector2(5920, 507)
+
+[node name="Coin_34" parent="Coins" unique_id=1569296698 instance=ExtResource("4_3ccbu")]
+position = Vector2(6608, 156)
+
+[node name="Coin_MiddleGround_01" parent="Coins" unique_id=1894756309 instance=ExtResource("4_3ccbu")]
+position = Vector2(6744, 152)
+
+[node name="Coin_Platform3_02" parent="Coins" unique_id=1473548481 instance=ExtResource("4_3ccbu")]
+position = Vector2(8488, 96)
+
+[node name="Coin_Platform3_03" parent="Coins" unique_id=744343546 instance=ExtResource("4_3ccbu")]
+position = Vector2(8320, 507)
+
+[node name="Coin_FinalGround_08" parent="Coins" unique_id=1822623543 instance=ExtResource("4_3ccbu")]
+position = Vector2(2000, 507)
+
+[node name="Coin_FinalGround_09" parent="Coins" unique_id=2056570405 instance=ExtResource("4_3ccbu")]
+position = Vector2(7596, 244)
+
+[node name="Coin_FinalGround_10" parent="Coins" unique_id=2052861433 instance=ExtResource("4_3ccbu")]
+position = Vector2(6644, 512)
+
+[node name="Coin_FinalBank_01" parent="Coins" unique_id=878847664 instance=ExtResource("4_3ccbu")]
+position = Vector2(7544, 520)
+
+[node name="Coin_FinalBank_02" parent="Coins" unique_id=804569271 instance=ExtResource("4_3ccbu")]
+position = Vector2(8732, 508)
+
+[node name="Coin_FinalBank_03" parent="Coins" unique_id=329656861 instance=ExtResource("4_3ccbu")]
+position = Vector2(3044, 500)
+
+[node name="Wallets" type="Node2D" parent="." unique_id=444078437]
+
+[node name="Wallet_HighRoute_01" parent="Wallets" unique_id=1852472634 instance=ExtResource("12_c2s76")]
+position = Vector2(2560, 555)
+detection_radius = 200.0
+animation_seed = 1.0
+
+[node name="Wallet_HighRoute_02" parent="Wallets" unique_id=1796023631 instance=ExtResource("15_pljue")]
+position = Vector2(1584, 332)
+detection_radius = 200.0
+animation_seed = 2.0
+
+[node name="Wallet_HighRoute_03" parent="Wallets" unique_id=574026309 instance=ExtResource("12_c2s76")]
+position = Vector2(5644, 448)
+detection_radius = 200.0
+animation_seed = 3.0
+
+[node name="Wallet_HighRoute_04" parent="Wallets" unique_id=1490119713 instance=ExtResource("15_pljue")]
+position = Vector2(3820, 496)
+detection_radius = 200.0
+animation_seed = 4.0
+
+[node name="Wallet_FinalThreat" parent="Wallets" unique_id=660762896 instance=ExtResource("31_finalwallet")]
+position = Vector2(8128, 380)
+animation_seed = 7.0
+
+[node name="Safes" type="Node2D" parent="." unique_id=1769681617]
+
+[node name="Safe_Section2Exit" parent="Safes" unique_id=1941264880 instance=ExtResource("17_5tfui")]
+position = Vector2(3928, 184)
+
+[node name="SafeGolden_Section4Exit" parent="Safes" unique_id=478618693 instance=ExtResource("20_g4yo4")]
+position = Vector2(7432, 288)
+
+[node name="Safe_FinalBank" parent="Safes" unique_id=669188405 instance=ExtResource("17_5tfui")]
+position = Vector2(9328, 300)
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1207000395]
+
+[node name="Platform_Section1_Upper_A" parent="Platforms" unique_id=1661832489 instance=ExtResource("21_im7ls")]
+position = Vector2(1412, 168)
+width_tiles = 6.0
+tier = 3
+height_above_ground = 480.0
+decoration_seed = 1408
+
+[node name="Platform_Section1_Lower_B" parent="Platforms" unique_id=953618659 instance=ExtResource("21_im7ls")]
+position = Vector2(2368, 315)
+width_tiles = 6.0
+decoration_seed = 2368
+
+[node name="Platform_Section2_High_A" parent="Platforms" unique_id=510396223 instance=ExtResource("21_im7ls")]
+position = Vector2(3844, 192)
+width_tiles = 6.0
+tier = 4
+height_above_ground = 720.0
+decoration_seed = 3904
+
+[node name="Platform_Section2_Lower_B" parent="Platforms" unique_id=1258367887 instance=ExtResource("21_im7ls")]
+position = Vector2(4608, 316)
+width_tiles = 4.0
+decoration_seed = 4736
+
+[node name="Platform_Section2_Middle_Lower" parent="Platforms" unique_id=1867487523 instance=ExtResource("21_im7ls")]
+position = Vector2(5304, 208)
+width_tiles = 4.0
+decoration_seed = 5248
+
+[node name="Platform_Section2_Middle_Upper" parent="Platforms" unique_id=615922693 instance=ExtResource("21_im7ls")]
+position = Vector2(6664, 199)
+width_tiles = 4.0
+tier = 3
+height_above_ground = 480.0
+decoration_seed = 6656
+
+[node name="Platform_Section3_Upper_A" parent="Platforms" unique_id=616381765 instance=ExtResource("21_im7ls")]
+position = Vector2(7492, 280)
+width_tiles = 6.0
+tier = 3
+height_above_ground = 480.0
+decoration_seed = 7488
+
+[node name="Platform_Section3_High_B" parent="Platforms" unique_id=1021273291 instance=ExtResource("21_im7ls")]
+position = Vector2(8468, 135)
+width_tiles = 4.0
+tier = 4
+height_above_ground = 720.0
+decoration_seed = 8320
+
+[node name="Platform_Section3_High_B2" parent="Platforms" unique_id=1367584466 instance=ExtResource("21_im7ls")]
+position = Vector2(9324, 312)
+width_tiles = 4.0
+tier = 4
+height_above_ground = 720.0
+decoration_seed = 8320
+
+[node name="Pits" type="Node2D" parent="." unique_id=1711345096]
+
+[node name="Pit_Section2" parent="Pits" unique_id=793030163 instance=ExtResource("23_via5u")]
+position = Vector2(2688, 555)
+left_ground_path = NodePath("../../Ground/Ground_00000_02560")
+right_ground_path = NodePath("../../Ground/Ground_02816_06144")
+
+[node name="Pit_Section4" parent="Pits" unique_id=593464362 instance=ExtResource("23_via5u")]
+position = Vector2(6272, 555)
+left_ground_path = NodePath("../../Ground/Ground_02816_06144")
+right_ground_path = NodePath("../../Ground/Ground_06400_10304")
+
+[node name="Portals" type="Node2D" parent="." unique_id=1943806544]
+
+[node name="Portal_Start" parent="Portals" unique_id=218191889 instance=ExtResource("25_ek63v")]
+position = Vector2(208, 555)
+
+[node name="Portal_Finish" parent="Portals" unique_id=1590948082 instance=ExtResource("28_uy3go")]
+position = Vector2(10048, 555)
+
+[node name="Hero" type="Node2D" parent="." unique_id=1027239826]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="Hero" unique_id=1316590555 instance=ExtResource("29_yf3a2")]
+position = Vector2(160, 555)
+
+[node name="BackgroundLayers" type="Node2D" parent="." unique_id=279003407]
+metadata/_edit_lock_ = true
+
+[node name="UI" type="Node2D" parent="." unique_id=1446500828]
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=994096106 groups=["camera"]]
+position = Vector2(350, 240)
+zoom = Vector2(0.5, 0.5)
+metadata/_edit_lock_ = true
+
+[node name="StartPoint" type="Marker2D" parent="." unique_id=319416065]
+position = Vector2(160, 555)
+
+[node name="StretchMarkers" type="Node2D" parent="." unique_id=1438128610]
+position = Vector2(0, 4)
+
+[node name="Flat_1" type="Marker2D" parent="StretchMarkers" unique_id=1280682649]
+position = Vector2(0, 555)
+
+[node name="Flat_1_End" type="Marker2D" parent="StretchMarkers" unique_id=282404749]
+position = Vector2(1280, 555)
+
+[node name="Platforms_1" type="Marker2D" parent="StretchMarkers" unique_id=891009349]
+position = Vector2(1280, 555)
+
+[node name="Platforms_1_End" type="Marker2D" parent="StretchMarkers" unique_id=798970590]
+position = Vector2(2560, 555)
+
+[node name="Flat_2" type="Marker2D" parent="StretchMarkers" unique_id=481711337]
+position = Vector2(2560, 555)
+
+[node name="Flat_2_End" type="Marker2D" parent="StretchMarkers" unique_id=1291780594]
+position = Vector2(3584, 555)
+
+[node name="Platforms_2" type="Marker2D" parent="StretchMarkers" unique_id=1863224447]
+position = Vector2(3584, 555)
+
+[node name="Platforms_2_End" type="Marker2D" parent="StretchMarkers" unique_id=834560533]
+position = Vector2(4864, 555)
+
+[node name="Flat_3" type="Marker2D" parent="StretchMarkers" unique_id=740214967]
+position = Vector2(4864, 555)
+
+[node name="Flat_3_End" type="Marker2D" parent="StretchMarkers" unique_id=1762553735]
+position = Vector2(7168, 555)
+
+[node name="Platforms_3" type="Marker2D" parent="StretchMarkers" unique_id=610795819]
+position = Vector2(7168, 555)
+
+[node name="Platforms_3_End" type="Marker2D" parent="StretchMarkers" unique_id=1762840357]
+position = Vector2(8448, 555)
+
+[node name="Flat_4" type="Marker2D" parent="StretchMarkers" unique_id=767183210]
+position = Vector2(8448, 555)
+
+[node name="Flat_4_End" type="Marker2D" parent="StretchMarkers" unique_id=2008214518]
+position = Vector2(9088, 555)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/collectible_coin.gd" id="1_coin_script"]
+[ext_resource type="Texture2D" path="res://assets/map_coin.svg" id="2_coin_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_coin"]
+size = Vector2(80, 80)
+
+[node name="Coin" type="Area2D" groups=["coin"]]
+script = ExtResource("1_coin_script")
+
+[node name="CoinArt" type="Sprite2D" parent="."]
+scale = Vector2(1, 1)
+texture = ExtResource("2_coin_texture")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_coin")

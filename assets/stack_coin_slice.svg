@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="48" viewBox="0 0 144 48" shape-rendering="crispEdges">
+  <!-- A single solid, side-on slice; its bottom rim separates it from the next coin. -->
+  <rect width="144" height="48" fill="#633519"/>
+  <rect x="4" width="136" height="44" fill="#eda52e"/>
+
+  <!-- Horizontal gold bands. -->
+  <rect x="4" y="0" width="136" height="8" fill="#df7623"/>
+  <rect x="4" y="8" width="136" height="22" fill="#ffd34f"/>
+  <rect x="4" y="30" width="136" height="4" fill="#fff0a0"/>
+  <rect x="4" y="34" width="136" height="10" fill="#eda52e"/>
+
+  <!-- Flat vertical light and shadow bands make the stack read as a rounded roll. -->
+  <rect x="4" y="0" width="12" height="44" fill="#f0a43b"/>
+  <rect x="4" y="8" width="12" height="22" fill="#fff0a0"/>
+  <rect x="4" y="30" width="12" height="4" fill="#fff5c1"/>
+  <rect x="16" y="0" width="12" height="44" fill="#ffd45a"/>
+  <rect x="16" y="0" width="12" height="8" fill="#e98529"/>
+  <rect x="16" y="30" width="12" height="4" fill="#fff0a0"/>
+
+  <rect x="108" y="0" width="16" height="44" fill="#e9a432"/>
+  <rect x="108" y="0" width="16" height="8" fill="#d66c22"/>
+  <rect x="108" y="30" width="16" height="4" fill="#f5c151"/>
+  <rect x="124" y="0" width="16" height="44" fill="#c77827"/>
+  <rect x="124" y="0" width="16" height="8" fill="#a94f1f"/>
+  <rect x="124" y="30" width="16" height="4" fill="#d88a2a"/>
+
+  <!-- Four-pixel dark separator: one crisp pixel row in the game's 4px pixel grid. -->
+  <rect y="44" width="144" height="4" fill="#633519"/>
+</svg>

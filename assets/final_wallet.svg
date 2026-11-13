@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="64" viewBox="0 0 96 64" shape-rendering="crispEdges">
+  <!-- Heavy jagged crown and side fins make this final wallet distinct. -->
+  <path d="M20 20H12V14H8V22H4V40H12V48H20V42H24Z" fill="#141e27"/>
+  <path d="M76 20H84V14H88V22H92V40H84V48H76V42H72Z" fill="#141e27"/>
+  <path d="M24 20V14H32V18H40V8H48V16H56V8H64V18H72V14H80V24H76V52H20V24Z" fill="#152027"/>
+  <path d="M24 24H72V48H24Z" fill="#26313a"/>
+  <path d="M28 24H68V44H28Z" fill="#3c293a"/>
+  <path d="M24 20H72V28H24Z" fill="#70283f"/>
+  <path d="M28 20H68V24H28Z" fill="#b13748"/>
+  <path d="M24 44H72V52H24Z" fill="#111a23"/>
+  <path d="M18 28H24V36H18L14 32Z" fill="#8b2d43"/>
+  <path d="M78 28H72V36H78L82 32Z" fill="#8b2d43"/>
+  <!-- Heavy angled brows, ember eyes and a jagged mouth. -->
+  <path d="M28 28H46V32H38V36H34V32H28Z" fill="#11151e"/>
+  <path d="M50 32H58V28H76V32H70V36H66V32H50Z" fill="#11151e"/>
+  <rect x="32" y="34" width="14" height="8" fill="#ff493d"/>
+  <rect x="54" y="34" width="14" height="8" fill="#ff493d"/>
+  <rect x="38" y="34" width="4" height="4" fill="#ffe38a"/>
+  <rect x="60" y="34" width="4" height="4" fill="#ffe38a"/>
+  <path d="M36 42H64V48H60V44H56V48H52V44H48V48H44V44H40V48H36Z" fill="#0d121a"/>
+  <path d="M40 42H44V46H40ZM48 42H52V46H48ZM56 42H60V46H56Z" fill="#ffe4bc"/>
+  <!-- Crimson studs and green-black armor bands. -->
+  <rect x="20" y="24" width="4" height="4" fill="#d64a50"/>
+  <rect x="72" y="24" width="4" height="4" fill="#d64a50"/>
+  <rect x="28" y="48" width="40" height="4" fill="#394638"/>
+</svg>

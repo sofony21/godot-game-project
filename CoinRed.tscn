@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/special_coin.gd" id="1_special_coin"]
+[ext_resource type="Texture2D" path="res://assets/map_red_coin.svg" id="2_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_coin"]
+size = Vector2(80, 80)
+
+[node name="CoinRed" type="Area2D" groups=["coin"]]
+script = ExtResource("1_special_coin")
+effect_type = "double_cash"
+
+[node name="CoinArt" type="Sprite2D" parent="."]
+texture = ExtResource("2_texture")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_coin")
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="56" viewBox="0 0 144 56" shape-rendering="crispEdges">
+  <!-- Side-on gold coin: stepped silhouette with a squared left cap and rounded right end. -->
+  <!-- Thin dark rim and warm top/bottom shading. -->
+  <path fill="#633519" d="M8 8h120v4h8v4h4v24h-4v4h-8v4H8v-4H4v-4H0V16h4v-4h4z"/>
+  <!-- Amber left edge gives the coin its visible thickness. -->
+  <path fill="#a8501f" d="M8 12h12v4h4v24h-4v4H8v-4H4V16h4z"/>
+  <!-- Deep orange upper band. -->
+  <path fill="#df7623" d="M20 12h108v4h8v4H20z"/>
+  <!-- Bright gold center band. -->
+  <path fill="#ffd34f" d="M20 20h116v16H20z"/>
+  <!-- Orange-gold lower band. -->
+  <path fill="#eda52e" d="M20 36h116v4h-8v4H20z"/>
+  <!-- Narrow cream glint sits below the eyes. -->
+  <path fill="#fff0a0" d="M24 40h104v4H24z"/>
+  <!-- Amber end facets beside the narrow glint. -->
+  <path fill="#b85e22" d="M8 40h16v4H8zM128 40h8v4h-8z"/>
+</svg>

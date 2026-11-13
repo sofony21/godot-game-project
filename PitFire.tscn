@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/pit_fire.gd" id="1_pit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pit"]
+size = Vector2(256, 256)
+
+[node name="PitFire" type="Node2D" groups=["pit"]]
+script = ExtResource("1_pit")
+
+[node name="FireVisuals" type="Node2D" parent="."]
+
+[node name="DeathZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
+shape = SubResource("RectangleShape2D_pit")
+

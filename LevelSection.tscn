@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/level_section.gd" id="1_section"]
+
+[node name="LevelSection" type="Node2D" groups=["route_section"]]
+script = ExtResource("1_section")
+
+[node name="Start" type="Marker2D" parent="."]
+
+[node name="End" type="Marker2D" parent="."]

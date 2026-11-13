@@ -1,29 +1,13 @@
-# Game Project
+# Editing the level
 
-A starter project for building a game with Godot 4. The game concept and mechanics can be added once they are defined.
-
-## Open the project
-
-1. Install Godot 4.3 or newer.
-2. In Godot's Project Manager, choose **Import** and select this folder's `project.godot` file.
-3. Press **F6** to run the current scene or **F5** to run the project.
-
-The starter scene is `scenes/main.tscn`; its script is `scripts/main.gd`. Put original art, audio, and other assets in `assets/`.
-
-## Next step
-
-Describe the game you want to make in Codex. Include anything you already know about the genre, player actions, camera, art style, platform, and what a first playable version should contain. It's fine to start with only a rough idea. The project can then be built out in small playable steps.
-
-## Git and GitHub
-
-This folder is initialized as a local Git repository. To publish it, create an empty repository on GitHub, then from this folder run:
-
-```sh
-git remote add origin https://github.com/YOUR-USER/YOUR-REPOSITORY.git
-git add .
-git commit -m "Create Godot starter project"
-git branch -M main
-git push -u origin main
-```
-
-Replace the URL with the repository address. GitHub authentication can be handled by Git Credential Manager or `gh auth login` if GitHub CLI is installed.
+- Open `Main.tscn`. Coins, wallets, safes, platforms, pits and portals are editable instances under `Level/Coins`, `Wallets`, `Safes`, `Platforms`, `Pits` and `Portals`; move them independently.
+- Add or remove an item by duplicating its matching reusable scene (for example `CoinBlue.tscn` or `Wallet_Flying.tscn`) into its container. Coins are not children of platforms.
+- Resize platforms with `width_tiles`. Resize pits with `width_tiles`; keep their left and right linked ground segments. The pit width also sets its fire and death area.
+- The level alternates flat stretches and platform stretches. Move the `Flat_1`, `Platforms_1`, `Flat_2` and following markers under `Level/StretchMarkers` to plan the order; editor-placed items remain independent.
+- Move `Level/StartPoint` to change where the opening swim ends. The intro lasts 1.25 seconds by default; adjust `INTRO_DURATION` in `scripts/game_config.gd`.
+- Platforms use whole 64-pixel grid units through `width_tiles`. Their 50-pixel visual layer and one-way collision share `GROUND_TOP_THICKNESS` with the ground in `scripts/game_config.gd`; edit the shared ground top-layer drawing to keep its bands and pixel pattern consistent.
+- The map has 19 coins, including one blue and one red special. Keep `MAP_COIN_COUNT`, `MAP_GOLD_COIN_COUNT`, and special coin counts in `scripts/game_config.gd` aligned with the editor-placed instances. The final ground stretch has ten coins for the $70 goal.
+- Safes show editor warnings if their collision bounds overlap another object or if the final portal clearance is too small.
+- Ground runs are single continuous segments between pits. Each pit uses even whole 64-pixel units so both ground edges stay on the level grid; its editor warning reports any edge mismatch.
+- Grid snap is enabled at 4 pixels in the 2D editor for this scene. Toggle it with **Shift+G**. Use the scene’s group tags and readable names when adding instances.
+- Leave the locked `Level` manager, `Ground`, `GroundDecorations`, `Hero`, `Camera2D`, `BackgroundLayers` and `UI` nodes in place. The manager provides their running visuals; object behavior and shared gameplay values live in each reusable scene and `scripts/game_config.gd`.
