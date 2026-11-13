@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_portal"]
+[ext_resource type="Texture2D" path="res://assets/portal.svg" id="2_art"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_portal"]
+size = Vector2(80, 160)
+
+[node name="PortalStart" type="Area2D" groups=["portal"]]
+script = ExtResource("1_portal")
+portal_type = "start"
+
+[node name="PortalArt" type="Sprite2D" parent="."]
+position = Vector2(0, -96)
+z_index = -1
+texture = ExtResource("2_art")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -96)
+shape = SubResource("RectangleShape2D_portal")
+
+[node name="HeroSpawn" type="Marker2D" parent="."]
+position = Vector2(14, 0)
+
+[node name="RunStart" type="Marker2D" parent="."]
+position = Vector2(96, 0)
+
+[node name="StartPortal_Position" type="Marker2D" parent="."]
+position = Vector2(0, 0)
+

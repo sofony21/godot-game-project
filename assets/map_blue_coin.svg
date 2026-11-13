@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" shape-rendering="crispEdges">
+  <!-- Blue rounded-octagon coin with matching frame and transparent background. -->
+  <path fill="#142d50" d="M36 4h32v4h12v8h8v8h8v12h4v32h-4v12h-8v8h-8v8H68v4H36v-4H24v-8h-8v-8H8V68H4V36h4V24h8v-8h8V8h12z"/>
+  <path fill="#24608c" d="M36 8h32v4h12v8h8v8h8v12h4v24h-4v12h-8v8h-8v8H68v4H36v-4H24v-8h-8v-8H12V68H8V36h4V24h8v-8h8v-8h8z"/>
+  <!-- Raised inner frame. -->
+  <path fill="#175e88" d="M36 16h32v4h8v8h8v8h8v8h4v20h-4v8h-8v8h-8v8h-8v4H36v-4h-8v-8h-8v-8h-4V44h4v-8h8v-8h8v-8h8z"/>
+  <!-- Cyan recessed face. -->
+  <path fill="#29a9d0" d="M36 24h32v4h8v8h8v8h4v24h-4v8h-8v8h-8v4H36v-4h-8v-8h-8V44h4v-8h8v-8h4z"/>
+  <path fill="#55d1e8" d="M36 28h32v4h8v8h8v8h4v16h-4v8h-8v8h-8v4H36v-4h-8v-8h-4V48h4v-8h8z"/>
+  <!-- Bright yellow lightning bolt. -->
+  <path fill="#ffe36a" d="M48 36h16L56 52h12L44 68l8-16H40z"/>
+  <!-- Rim highlights and lower-right blue shade. -->
+  <path fill="#a8f4fa" d="M20 32h4v-8h8v-4h12v4H32v4h-4v8h-4v4h-4z"/>
+  <path fill="#11385b" d="M84 68h8v-8h4v12h-4v8h-8v8H68v-4h12v-8h4z"/>
+  <path fill="#24648c" d="M76 68h8v-8h4v12h-4v8h-8v4h-8v-4h8z"/>
+</svg>

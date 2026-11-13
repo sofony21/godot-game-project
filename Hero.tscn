@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="Texture2D" path="res://assets/coin_body.svg" id="2_coin"]
+[ext_resource type="Script" path="res://scripts/legs.gd" id="3_legs"]
+[ext_resource type="Script" path="res://scripts/hero_face.gd" id="4_face"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hero"]
+size = Vector2(92, 68)
+
+[node name="Hero" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -34)
+shape = SubResource("RectangleShape2D_hero")
+
+[node name="PixelVisuals" type="Node2D" parent="."]
+
+[node name="Legs" type="Node2D" parent="PixelVisuals"]
+script = ExtResource("3_legs")
+
+[node name="CoinBody" type="Sprite2D" parent="PixelVisuals"]
+position = Vector2(0, -40)
+texture = ExtResource("2_coin")
+
+[node name="HeroFace" type="Node2D" parent="PixelVisuals"]
+position = Vector2(0, -40)
+script = ExtResource("4_face")
+
+[node name="CoinStack" type="Node2D" parent="PixelVisuals"]

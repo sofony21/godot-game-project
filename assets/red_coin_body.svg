@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="56" viewBox="0 0 144 56" shape-rendering="crispEdges">
+  <!-- Red version of the hero's side-on gold coin body. -->
+  <path fill="#5a1d25" d="M8 8h120v4h8v4h4v24h-4v4h-8v4H8v-4H4v-4H0V16h4v-4h4z"/>
+  <path fill="#9e3b2b" d="M8 12h12v4h4v24h-4v4H8v-4H4V16h4z"/>
+  <path fill="#cb3e2b" d="M20 12h108v4h8v4H20z"/>
+  <path fill="#f05238" d="M20 20h116v16H20z"/>
+  <path fill="#e47c35" d="M20 36h116v4h-8v4H20z"/>
+  <path fill="#ffd1bd" d="M24 40h104v4H24z"/>
+  <path fill="#c8612e" d="M8 40h16v4H8zM128 40h8v4h-8z"/>
+</svg>

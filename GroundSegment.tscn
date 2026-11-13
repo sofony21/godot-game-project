@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ground_segment.gd" id="1_ground"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ground"]
+size = Vector2(640, 20)
+
+[node name="GroundSegment" type="Node2D" groups=["ground"]]
+script = ExtResource("1_ground")
+
+[node name="GroundRun" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundRun"]
+shape = SubResource("RectangleShape2D_ground")
+
+[node name="Art" type="Node2D" parent="."]

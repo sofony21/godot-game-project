@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/flying_wallet.gd" id="1_wallet"]
+[ext_resource type="Texture2D" path="res://assets/walking_wallet.svg" id="2_art"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wallet"]
+size = Vector2(88, 76)
+
+[node name="Wallet_Walking" type="Area2D" groups=["wallet"]]
+script = ExtResource("1_wallet")
+movement_type = "walking"
+
+[node name="WalletArt" type="Sprite2D" parent="."]
+texture = ExtResource("2_art")
+
+[node name="Legs" type="Node2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wallet")
+
+[node name="PatrolLeft" type="Marker2D" parent="."]
+position = Vector2(-130, 0)
+
+[node name="PatrolRight" type="Marker2D" parent="."]
+position = Vector2(130, 0)
+
